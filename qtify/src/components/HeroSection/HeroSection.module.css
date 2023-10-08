@@ -1,0 +1,24 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 270;
+}
+.heroContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+
+}
+
+.heroContent1{
+    display: flex;
+    justify-content: center;
+    color: var(--color-white);
+    width: 605px;
+    text-align: center;
+
+}
