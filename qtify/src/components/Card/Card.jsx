@@ -7,7 +7,8 @@ const Card = ({data,type}) => {
   const getCard = (type) =>{
     switch(type){
       case "album":{
-        const {image,follows,title,song} = data;
+        const {image,title} = data;
+        // const {image,follows,title,song} = data;
         return (
           // eslint-disable-next-line no-template-curly-in-string
           <Tooltip title={'${songs.length} songs'} placement='top' arrow>
