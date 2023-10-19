@@ -7,16 +7,16 @@ const Card = ({data,type}) => {
   const getCard = (type) =>{
     switch(type){
       case "album":{
-        const {image,title} = data;
-        // const {image,follows,title,song} = data;
+        const {image,follows,title,songs} = data;
+        
         return (
-          // eslint-disable-next-line no-template-curly-in-string
-          <Tooltip title={'${songs.length} songs'} placement='top' arrow>
+          
+          <Tooltip title={`${songs.length} songs`} placement='top' arrow>
           <div className={styles.wrapper}>
           <div className={styles.card}>
             <img src={image} alt ='album'/>
             <div className={styles.banner} >
-              <Chip label ={'${follows}Follows'} size='small' className={styles.chip}/>
+              <Chip label ={`${follows} Follows`} size='small' className={styles.chip}/>
 
             </div>
           </div>
