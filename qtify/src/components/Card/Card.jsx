@@ -20,7 +20,7 @@ const Card = ({data,type}) => {
 
             </div>
           </div>
-          <div classname ={styles.titleWrapper}>
+          <div className ={styles.titleWrapper}>
             <p>{title}</p>
           </div>
           </div>
