@@ -8,9 +8,9 @@ const Card = ({data,type}) => {
     switch(type){
       case "album":{
         const {image,follows,title,songs} = data;
-        
+        console.log("title",title,data)
         return (
-          
+           
           <Tooltip title={`${songs.length} songs`} placement='top' arrow>
           <div className={styles.wrapper}>
           <div className={styles.card}>
@@ -27,6 +27,22 @@ const Card = ({data,type}) => {
           </Tooltip>
         )
       }
+      case "songs":
+				return (
+					<div className={styles.wrapper}>
+						<div className={styles.card}>
+							<img src={data.image} alt="song" loading="lazy" />
+							<div className={styles.banner}>
+								<div id={styles.pill}>
+									<p>{data.likes} Likes</p>
+								</div>
+							</div>
+						</div>
+						<div className={styles.titleWrapper}>
+							<p>{data.title}</p>
+						</div>
+					</div>
+				);
       default: return <></>;
     }
   }

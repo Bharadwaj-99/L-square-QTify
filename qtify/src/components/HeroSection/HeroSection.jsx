@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.heroContent}>
-        < div classname={styles.heroContent1}>
+        < div className={styles.heroContent1}>
         <h1>100 Thousand Songs, ad-free</h1>
         <h1>Over thousands of podcast episodes</h1>
       </div>

@@ -6,6 +6,7 @@ import Carousel from '../Carousel/Carousel';
 
 const Section = ({title,data,type}) => {
   const [carouselToggle,setCarouselToggle] = useState(true);  
+  // console.log("data",data);
   const handleToggle = () =>{
     setCarouselToggle(!carouselToggle);
 
